@@ -1,21 +1,14 @@
-//
-//  rmdir.h
-//  t
-//
-//  Created by Shawn H Wang on 2020/11/9.
-//
-
+/*
+wjz
+*/
 #ifndef rmdir_h
 #define rmdir_h
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <errno.h>
-#include <sys/types.h>
-#include <dirent.h>
-#include <unistd.h>
+#include <dirent.h>//DIR*
+#include <libgen.h>//dirname
 
+int exec_rmdir(char*);
 
+int myrmdir(char* a);
 
 #endif /* rmdir_h */
